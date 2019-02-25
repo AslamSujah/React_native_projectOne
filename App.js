@@ -22,15 +22,15 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{backgroundColor:'blue', textAlign:'center', width:'100%'}}>
+        <View style={{backgroundColor:'blue', width:'100%'}}>
           <Text style={styles.welcome}>Text for view 1</Text>
         </View>
 
-        <View>
+        <View style={{backgroundColor:'yellow', width:'100%'}}>
           <Text style={styles.welcome}>Text for view 2</Text>
         </View>
 
-        <View>
+        <View style={{backgroundColor:'green',  width:'100%'}}>
           <Text style={styles.welcome}>Text for view 3</Text>
         </View>
 
