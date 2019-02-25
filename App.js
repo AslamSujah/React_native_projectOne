@@ -22,17 +22,18 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{backgroundColor:'blue', width:'100%'}}>
-          <Text style={styles.welcome}>Text for view 1</Text>
-        </View>
+        
+          <View style={{backgroundColor:'blue', width:'100%'}}>
+            <Text style={styles.text123}>Text for view 1</Text>
+          </View>
 
-        <View style={{backgroundColor:'yellow', width:'100%'}}>
-          <Text style={styles.welcome}>Text for view 2</Text>
-        </View>
+          <View style={{backgroundColor:'yellow', width:'100%'}}>
+            <Text>Text for view 2</Text>
+          </View>
 
-        <View style={{backgroundColor:'green',  width:'100%'}}>
-          <Text style={styles.welcome}>Text for view 3</Text>
-        </View>
+          <View style={{backgroundColor:'green'}}>
+            <Text style={styles.text123}>Text for view 3</Text>
+          </View>
 
       </View>
     );
@@ -43,18 +44,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     backgroundColor: '#F5FCFF',
+    marginTop: 40,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+
+  text123: {
+    fontSize: 25,
     fontWeight: 'bold',
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  }
+  
 });
