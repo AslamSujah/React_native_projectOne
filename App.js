@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
 import Nav from './src/nav/nav';
+import Generate from './generator/generate';
 
 class App extends Component {
 
@@ -14,7 +15,8 @@ state = {
       <View style={styles.container}>
 
           <Nav nameOfApp={this.state.nameOfApp}/>
-                  
+          <Generate/>
+
       </View>
     );
   }

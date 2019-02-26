@@ -1,6 +1,5 @@
 import React from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-import { gray } from 'ansi-colors';
+import {StyleSheet, Text, View} from 'react-native';
 
 const Nav = (props) => (
     <View style={styles.nav}>
@@ -8,7 +7,7 @@ const Nav = (props) => (
     </View>
 )
 
-export default Nav;
+
 
 const styles = StyleSheet.create({
     nav: {
@@ -20,3 +19,5 @@ const styles = StyleSheet.create({
         borderBottomColor: '#dddddd',
     }
 });
+
+export default Nav;
