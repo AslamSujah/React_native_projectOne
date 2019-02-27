@@ -1,10 +1,16 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableWithoutFeedback} from 'react-native';
 
 const Generate = () =>(
-    <View style={styles.generate}>
-        <Text>Add Number</Text>
-    </View>
+
+    <TouchableWithoutFeedback
+        onPress={() => alert('You touched it')}
+    >
+        <View style={styles.generate}>
+            <Text>Add Number</Text>
+        </View>
+    </TouchableWithoutFeedback>
+    
 )
 
 const styles = StyleSheet.create({
