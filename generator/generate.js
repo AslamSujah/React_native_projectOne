@@ -1,10 +1,16 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableWithoutFeedback} from 'react-native';
 
-const Generate = () =>(
+const Generate = (props) =>(
 
     <TouchableWithoutFeedback
-        onPress={() => alert('You touched it')}
+        onPress={() => 
+            props.add()
+        }
+        //onLongPress={() => alert('You long press it')}
+        //onPressIn={() => alert('onpress in')}
+        //onPressOut={() => alert('onpress out')}
+        //delayLongPress={5000}
     >
         <View style={styles.generate}>
             <Text>Add Number</Text>

@@ -10,12 +10,16 @@ state = {
   nameOfApp: "My First Application"
 }
 
+onAddRandom = () => {
+  alert('You added Randomly')
+}
+
   render() {
     return (
       <View style={styles.container}>
 
           <Nav nameOfApp={this.state.nameOfApp}/>
-          <Generate/>
+          <Generate add={this.onAddRandom}/>
 
       </View>
     );
